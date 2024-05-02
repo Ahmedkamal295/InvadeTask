@@ -6,13 +6,14 @@
 //
 
 import Foundation
+import RealmSwift
 struct ListingModel : Codable {
-    let domains : [String]?
-    let stateprovince : String?
-    let name : String?
-    let webpages : [String]?
-    let country : String?
-    let alphatwocode : String?
+    var domains : [String]?
+    var stateprovince : String?
+    var name : String?
+    var webpages : [String]?
+    var country : String?
+    var alphatwocode : String?
 
     enum CodingKeys: String, CodingKey {
 
@@ -33,5 +34,13 @@ struct ListingModel : Codable {
         country = try values.decodeIfPresent(String.self, forKey: .country)
         alphatwocode = try values.decodeIfPresent(String.self, forKey: .alphatwocode)
     }
+}
 
+class RealmListingModel : Object {
+    @objc dynamic var domains : [String]?
+    @objc dynamic var stateprovince : String?
+    @objc dynamic var name : String?
+    @objc dynamic var webpages : [String]?
+    @objc dynamic var country : String?
+    @objc dynamic var alphatwocode : String?
 }

@@ -8,7 +8,8 @@ target 'InvadeTask' do
   # Pods for InvadeTask
   pod 'Alamofire'
   pod 'MBProgressHUD'
-   pod 'RealmSwift', '>= 0.92.3'
+  pod 'RealmSwift'
+
    # post install
    post_install do |installer|
      # ios deployment version

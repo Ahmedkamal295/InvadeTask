@@ -10,7 +10,6 @@ import UIKit
 
 class DetailsScreenPresenter: DetailsScreenPresenterProtocol, DetailsScreenInteractorOutputProtocol {
     
-   
     //MARK: - variable
     weak var view: DetailsScreenProtocol?
     private let interactor: DetailsScreenInteractorInputProtocol
@@ -23,21 +22,8 @@ class DetailsScreenPresenter: DetailsScreenPresenterProtocol, DetailsScreenInter
         self.router = router
     }
     
-    func viewDidLoad() {
-        listingModel =  view?.fetchModel()
-    }
-    
-    func detailsScreenFetchedSuccessfully(listing: ListingModel) {
-        self.listingModel = listing
-    }
-    
-    func detailsScreenFetchingFailed(withError error: Error) {
-        //Failure - Should show alert
-    }
-    
-    func configure(model: ListingModel) {
-        view?.handelView(name: model.name ?? "", country: model.country ?? "")
-        // append model in labels
-        
+    func viewDidLoad(model: ListingModel) {
+        listingModel =  model
+        view?.update(with: model)
     }
 }

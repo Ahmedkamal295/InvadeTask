@@ -7,7 +7,6 @@
 
 import Foundation
 import UIKit
-
 class ListingPresenter: ListingPresenterProtocol, ListingInteractorOutputProtocol {
     
     //MARK: - variable

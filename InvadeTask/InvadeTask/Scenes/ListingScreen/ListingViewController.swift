@@ -60,10 +60,7 @@ class ListingViewController: UIViewController, ListingViewProtocol {
 
     // MARK: - navigate To Listing Details
     func navigateToListingDetails(model: ListingModel) {
-        print("model >>\(model)")
-        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailsScreenViewController") as! DetailsScreenViewController
-        controller.listingModel = model
-        navigationController?.pushViewController(controller, animated: true)
+        navigationController?.pushViewController(ListingRouter.detailsteModule(model: model) , animated: true)
     }
 }
 //MARK: - UITableViewDataSource

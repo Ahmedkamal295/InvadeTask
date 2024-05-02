@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Details Screen View Controller-->
+        <scene sceneID="l6L-Wa-gez">
+            <objects>
+                <viewController storyboardIdentifier="DetailsScreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JEP-1D-iLH" customClass="DetailsScreenViewController" customModule="InvadeTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w6L-V9-sYd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bVJ-2m-MVe">
+                                <rect key="frame" x="20" y="350.66666666666669" width="353" height="150.66666666666669"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="university Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGp-Nq-SzW">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="25.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="university State" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YFE-j0-LDy">
+                                        <rect key="frame" x="0.0" y="41.333333333333314" width="353" height="21.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="v9X-5q-e7V">
+                                        <rect key="frame" x="0.0" y="79" width="353" height="21.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDf-uh-Yna">
+                                                <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country Code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lx-77-xBN">
+                                                <rect key="frame" x="241" y="0.0" width="112" height="21.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vE1-YZ-QMM">
+                                        <rect key="frame" x="0.0" y="116.66666666666663" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Web Page"/>
+                                        <connections>
+                                            <action selector="webPageAction:" destination="JEP-1D-iLH" eventType="touchUpInside" id="EyY-OK-66l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zIB-Ua-D3k"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bVJ-2m-MVe" firstAttribute="centerY" secondItem="w6L-V9-sYd" secondAttribute="centerY" id="P6s-gm-heZ"/>
+                            <constraint firstItem="zIB-Ua-D3k" firstAttribute="trailing" secondItem="bVJ-2m-MVe" secondAttribute="trailing" constant="20" id="Rf9-AN-0ww"/>
+                            <constraint firstItem="bVJ-2m-MVe" firstAttribute="centerX" secondItem="w6L-V9-sYd" secondAttribute="centerX" id="cMF-52-h7U"/>
+                            <constraint firstItem="bVJ-2m-MVe" firstAttribute="leading" secondItem="zIB-Ua-D3k" secondAttribute="leading" constant="20" id="vrr-al-Z9f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryCodeLabel" destination="0Lx-77-xBN" id="6pG-fB-nEA"/>
+                        <outlet property="countryLabel" destination="jDf-uh-Yna" id="aoR-2p-IRt"/>
+                        <outlet property="universityNameLabel" destination="VGp-Nq-SzW" id="BUn-4h-b8V"/>
+                        <outlet property="universityStateLabel" destination="YFE-j0-LDy" id="WHT-Mv-MMj"/>
+                        <outlet property="webPageButton" destination="vE1-YZ-QMM" id="3Xn-DJ-g4Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ou6-Km-i9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="6"/>
+        </scene>
+    </scenes>
+</document>

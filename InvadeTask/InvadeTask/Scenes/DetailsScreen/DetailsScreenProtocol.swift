@@ -9,15 +9,12 @@ import Foundation
 import UIKit
 protocol DetailsScreenProtocol: AnyObject {
     var presenter: DetailsScreenPresenterProtocol! { get set }
-    func fetchModel() -> ListingModel
-    func handelView(name: String, country: String)
+    func update(with model: ListingModel)
 }
 
 protocol DetailsScreenPresenterProtocol: AnyObject {
     var view: DetailsScreenProtocol? { get set }
-    func viewDidLoad()
-    func configure(model: ListingModel)
-   
+    func viewDidLoad(model: ListingModel)
 }
 protocol DetailsScreenRouterProtocol {
 }
@@ -28,7 +25,7 @@ protocol DetailsScreenInteractorInputProtocol {
 }
 
 protocol DetailsScreenInteractorOutputProtocol: AnyObject {
-    func detailsScreenFetchedSuccessfully(listing: ListingModel)
-    func detailsScreenFetchingFailed(withError error: Error)
+//    func detailsScreenFetchedSuccessfully(listing: ListingModel)
+//    func detailsScreenFetchingFailed(withError error: Error)
 }
 
