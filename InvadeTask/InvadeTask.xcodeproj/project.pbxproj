@@ -28,7 +28,8 @@
 		F7DC944A2BE3899D006BEB11 /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DC94492BE3899D006BEB11 /* Details.storyboard */; };
 		F7DC944D2BE38A41006BEB11 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC944C2BE38A41006BEB11 /* Globals.swift */; };
 		F7DC944F2BE38FCA006BEB11 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC944E2BE38FCA006BEB11 /* DetailsInteractor.swift */; };
-		F7DC94572BE3A38E006BEB11 /* InvadeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC94562BE3A38E006BEB11 /* InvadeTaskTests.swift */; };
+		F7DC945E2BE3A94B006BEB11 /* ListingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC945D2BE3A94B006BEB11 /* ListingViewControllerTests.swift */; };
+		F7DC94602BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC945F2BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,8 @@
 		F7DC944C2BE38A41006BEB11 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		F7DC944E2BE38FCA006BEB11 /* DetailsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInteractor.swift; sourceTree = "<group>"; };
 		F7DC94542BE3A38D006BEB11 /* InvadeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvadeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7DC94562BE3A38E006BEB11 /* InvadeTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvadeTaskTests.swift; sourceTree = "<group>"; };
+		F7DC945D2BE3A94B006BEB11 /* ListingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerTests.swift; sourceTree = "<group>"; };
+		F7DC945F2BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreenViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,7 +240,8 @@
 		F7DC94552BE3A38E006BEB11 /* InvadeTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				F7DC94562BE3A38E006BEB11 /* InvadeTaskTests.swift */,
+				F7DC945D2BE3A94B006BEB11 /* ListingViewControllerTests.swift */,
+				F7DC945F2BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift */,
 			);
 			path = InvadeTaskTests;
 			sourceTree = "<group>";
@@ -412,7 +415,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DC94572BE3A38E006BEB11 /* InvadeTaskTests.swift in Sources */,
+				F7DC945E2BE3A94B006BEB11 /* ListingViewControllerTests.swift in Sources */,
+				F7DC94602BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
