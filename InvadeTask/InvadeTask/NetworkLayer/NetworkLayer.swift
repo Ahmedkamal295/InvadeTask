@@ -15,6 +15,7 @@ enum Result<T> {
 // Define custom error type
 enum NetworkError: Error {
     case noData
+    case noConnection
 }
 
 class RetryHandler: RequestInterceptor {
@@ -32,6 +33,10 @@ class NetworkLayer {
     
     func fetchData<T: Codable>(method: HTTPMethod, url: String, parameters: Parameters, headers: HTTPHeaders?, completion: @escaping (Result<T>) -> ()) {
         print(url)
+        
+        // Check network reachability
+        ListingRouter.checkConnection()
+        
         //MARK: -  headers
         let finalHeaders: HTTPHeaders? = headers
         
@@ -69,4 +74,3 @@ class NetworkLayer {
         }
     }
 }
-

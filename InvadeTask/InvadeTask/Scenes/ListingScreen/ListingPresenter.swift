@@ -29,7 +29,6 @@ class ListingPresenter: ListingPresenterProtocol, ListingInteractorOutputProtoco
     func viewDidLoad() {
         view?.showLoadingIndicator()
         interactor.fetchListing()
-        
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         view?.listingTableView().refreshControl = refreshControl
     }

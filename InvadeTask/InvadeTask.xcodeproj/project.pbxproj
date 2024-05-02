@@ -30,6 +30,7 @@
 		F7DC944F2BE38FCA006BEB11 /* DetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC944E2BE38FCA006BEB11 /* DetailsInteractor.swift */; };
 		F7DC945E2BE3A94B006BEB11 /* ListingViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC945D2BE3A94B006BEB11 /* ListingViewControllerTests.swift */; };
 		F7DC94602BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC945F2BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift */; };
+		F7DC94622BE3DC46006BEB11 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DC94612BE3DC46006BEB11 /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F7DC94542BE3A38D006BEB11 /* InvadeTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvadeTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DC945D2BE3A94B006BEB11 /* ListingViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewControllerTests.swift; sourceTree = "<group>"; };
 		F7DC945F2BE3AF16006BEB11 /* DetailsScreenViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScreenViewControllerTests.swift; sourceTree = "<group>"; };
+		F7DC94612BE3DC46006BEB11 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			children = (
 				F703EB1A2BE2DE1D00E8EB30 /* NetworkLayer.swift */,
 				F703EB1E2BE2DE6500E8EB30 /* Constants.swift */,
+				F7DC94612BE3DC46006BEB11 /* Reachability.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				F703EAEA2BE2B6E300E8EB30 /* AppDelegate.swift in Sources */,
 				F703EB102BE2DCC800E8EB30 /* ListingRouter.swift in Sources */,
 				F7DC944D2BE38A41006BEB11 /* Globals.swift in Sources */,
+				F7DC94622BE3DC46006BEB11 /* Reachability.swift in Sources */,
 				F703EB0A2BE2DADD00E8EB30 /* ListingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

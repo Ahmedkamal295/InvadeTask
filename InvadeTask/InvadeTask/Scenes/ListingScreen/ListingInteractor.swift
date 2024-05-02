@@ -23,6 +23,7 @@ class ListingInteractor: ListingInteractorInputProtocol {
                 print("model >>\(model)")
             case .failure(let error):
                 self.presenter?.listingFetchingFailed(withError: error)
+                ListingRouter.alertDone(alertTitle: "Error", alertMessage: error.localizedDescription)
                 print("error >>\(error.localizedDescription)")
             }
         }
